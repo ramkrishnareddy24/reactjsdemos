@@ -1,0 +1,5 @@
+React Commands
+---------------
+npx create-react-app . 		//create within current folder
+npx create-react-app dream-app
+npm start
