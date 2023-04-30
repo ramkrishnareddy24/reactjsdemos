@@ -1,21 +1,35 @@
-import React from 'react'
+import React from 'react';
 import PropTypes from 'prop-types';
-const Navbar = ({title}) => {
- 
-    return (
-      <nav className='navbar bg-primary text-white'>
-      <h4 className='p-2'>{title}</h4>
-      </nav>
-    )
-  
-}
+import { BrowserRouter, Link } from 'react-router-dom';
+
+const Navbar = ({ title }) => {
+  return (
+    <nav className='navbar navbar-dark bg-light border text-dark'>
+      <div class='container'>
+        <b>{title}</b>
+      </div>
+
+      <div className='col-md-1 offset-md-1 text-white'>
+        <BrowserRouter forceRefresh={true}>
+          <Link to='/'>
+            <b>Home</b>
+          </Link>
+          <br></br>
+          <Link to='/about'>
+            <b>About</b>
+          </Link>
+        </BrowserRouter>
+      </div>
+    </nav>
+  );
+};
 
 Navbar.defaultProps = {
-  title: 'GitHub Finder'
+  title: 'GitHub Finder',
 };
 
 Navbar.propTypes = {
   title: PropTypes.string.isRequired,
 };
 
-export default Navbar
+export default Navbar;

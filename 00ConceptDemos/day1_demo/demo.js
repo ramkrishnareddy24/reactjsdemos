@@ -42,23 +42,36 @@
 
 
 //filter
-let object = [{flag:1 , a:1},
-    {flag:0 , a:2},
-    {flag:1 ,a:3}];
-object.filter((obj)=>{
-if(obj.flag===1){
-console.log("flag :"+obj.flag +",a:"+obj.a);
+// let object = [{flag:1 , a:1},
+//     {flag:0 , a:2},
+//     {flag:1 ,a:3}];
+// object.filter((obj)=>{
+// if(obj.flag===1){
+// console.log("flag :"+obj.flag +",a:"+obj.a);
+// }
+// })
+
+// //every
+// const computers = [
+//     { name: "Apple", ram: 24 },
+//     { name: "Compaq", ram: 4 },
+//     { name: "Acer", ram: 32 }
+//   ]
+//   computers.every(comp=>comp.ram>2);
+
+// // reduce
+// const numbers = [10, 20, 30]
+// numbers.reduce((acc, number) => acc + number, 0)
+
+// for(var i=0;i<3;i++){
+//   setTimeout(() => console.log(i),1);
+// }
+
+function myFun(){
+  console.log(name);
+  // console.log(age);
+  var name='B';
+  let age=21;
 }
-})
 
-//every
-const computers = [
-    { name: "Apple", ram: 24 },
-    { name: "Compaq", ram: 4 },
-    { name: "Acer", ram: 32 }
-  ]
-  computers.every(comp=>comp.ram>2);
-
-// reduce
-const numbers = [10, 20, 30]
-numbers.reduce((acc, number) => acc + number, 0)
+myFun();

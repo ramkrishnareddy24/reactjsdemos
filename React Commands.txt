@@ -3,3 +3,38 @@ React Commands
 npx create-react-app . 		//create within current folder
 npx create-react-app dream-app
 npm start
+
+// Babel Install
+npm install --save-dev @babel/core @babel/cli @babel/preset-env @babel/node
+npm install nodemon --save-dev
+
+
+
+
+
+JavaScript can access every part of the HTML DOM(Document Object Model) and change the 
+web-page or add event listeners.
+The HTML DOM is a standard for how to get, change, add, or delete HTML elements.
+<!DOCTYPE html>
+<html>
+ <body>
+   <h1 id="demo"></h1>
+   <script>
+     document.getElementById('demo').innerHTML = 'Hello JavaScript!';
+   </script>
+ </body>
+</html>
+
+
+
+
+npm install@mui/icons-material
+npm install@mui/material
+
+npm install @mui/material @emotion/react @emotion/styled  
+npm install @mui/material @mui/styled-engine-sc styled-components
+
+npm install semantic-ui-react semantic-ui-css
+
+npm install react-router-dom --save
+
